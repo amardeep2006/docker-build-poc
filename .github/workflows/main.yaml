@@ -11,16 +11,4 @@ jobs:
         uses: ./
         with:
           test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
-          args: "-e -o ./reports/html/"
-          
-      - name: Upload Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: jmeter-results
-          path: result.jtl
-
-      - name: Upload Html Reports
-        uses: actions/upload-artifact@v3
-        with:
-          name: jmeter-reports
-          path: reports          
+          build_args: "CUSTOM_BUILD_ARG=ca-certificates"
