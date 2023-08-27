@@ -13,7 +13,8 @@ inputs:
 
 runs:
   using: 'docker'
-  build-arg: "CUSTOM_BUILD_ARG=ca-certificates"
+  build_args: 
+    - "CUSTOM_BUILD_ARG=ca-certificates"
   image: 'Dockerfile'
   # args: 
   # - "--build-args CUSTOM_BUILD_ARG=ca-certificates"
