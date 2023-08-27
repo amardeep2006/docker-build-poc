@@ -1,0 +1,17 @@
+# action.yml
+name: Test Action
+description: Test Action
+
+branding:
+  color: blue
+  icon: feather
+
+inputs:   
+  build_args:
+    required: false
+    description: Optional arguments.
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  build_args: '${{ inputs.build_args }}'
