@@ -13,5 +13,5 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  build_args: '${{ inputs.build_args }}'
+  image: 'Dockerfile' 
+  args: '${{ inputs.build_args }}'
