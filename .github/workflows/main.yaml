@@ -10,5 +10,4 @@ jobs:
       - name: Run JMeter Tests
         uses: ./
         with:
-          test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
           build_args: "CUSTOM_BUILD_ARG=ca-certificates"
